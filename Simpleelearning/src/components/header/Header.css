@@ -1,0 +1,223 @@
+.golden-studio-navbar {
+    background-color: #203281;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 5px solid #06e5f5cb;
+    width: 100%;
+    padding: 8px 24px;
+    font-family: "Calibri", sans-serif;
+  
+  }
+  
+  .digital-studio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .digital-studio-image {
+    width: 123px;
+    height: 23.5px;
+    object-fit: cover;
+    margin-top: 7px;
+  }
+  
+  .digital-studio-divider {
+    width: 1px;
+    height: 26px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 7px;
+  }
+  
+  .ds-logo {
+    
+    width: auto;
+    height: 60px;
+  }
+  
+  .header-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    margin-left: auto;
+  }
+  
+  .header-text {
+    font-size: 16px;
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: 500;
+  }
+  .admin-icon{
+    font-size: 16px;
+    /* padding-top: 5px; */
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  .create-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  @media (max-width: 1024px) and (min-width:769px){
+    .golden-studio-navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 16px;
+    }
+  
+    .digital-studio-container {
+      gap: 5px; /* Reduced gap */
+      align-items: center; /* Center align items */
+    }
+  
+    .digital-studio-image,
+    .ds-logo {
+      margin-bottom: 0; /* Remove bottom margin */
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .header-buttons {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 24px;
+      background-color: #203281;
+      border: 1px solid #06e5f5cb;
+      border-radius: 8px;
+      padding: 10px;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000; /* Ensure the dropdown is on top */
+    }
+  
+    .header-buttons.open {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 768px) and (min-width:481px) {
+    .golden-studio-navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 16px;
+    }
+  
+    .digital-studio-container {
+      gap: 5px; /* Reduced gap */
+      align-items: center; /* Center align items */
+    }
+  
+    .digital-studio-image,
+    .ds-logo {
+      margin-bottom: 0; 
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .header-buttons {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 24px;
+      background-color: #203281;
+      border: 1px solid #06e5f5cb;
+      border-radius: 8px;
+      padding: 10px;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000; /* Ensure the dropdown is on top */
+    }
+  
+    .header-buttons.open {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .golden-studio-navbar {
+      padding: 12px;
+    }
+  
+    .digital-studio-container {
+      gap: 5px; /* Reduced gap */
+      align-items: center; /* Center align items */
+    }
+  
+    .header-buttons {
+      gap: 8px;
+    }
+  
+    .create-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .header-buttons {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 24px;
+      background-color: #203281;
+      border: 1px solid #06e5f5cb;
+      border-radius: 8px;
+      padding: 10px;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000; /* Ensure the dropdown is on top */
+    }
+  
+    .header-buttons.open {
+      display: flex;
+    }
+  }
